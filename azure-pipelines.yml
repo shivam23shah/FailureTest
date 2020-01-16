@@ -32,3 +32,7 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+- task: katalonTask@0
+  inputs:
+    version: '7.2.1'
+    executeArgs: 'katalonc -noSplash -runMode=console -retry=0 -testSuitePath="Test Suites/ShivamTest/TestSuite 1" -executionProfile="default" -browserType="Chrome" -apiKey="a29c5e0a-b4a4-442b-b7fd-711a6907682b"'
