@@ -18,13 +18,16 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://genesis.dev.lrescorp.com/Account/Logon?ReturnUrl=%2fOrders%2fPipeline')
+WebUI.navigateToUrl('https://genesis.dev.lrescorp.com/Account/Logon?ReturnUrl=%2f')
 
 WebUI.maximizeWindow()
+WebUI.delay(2)
 
 WebUI.setText(findTestObject('Object Repository/Page_Admin Portal Login/input_User Name_UserName'), 'sshah')
+WebUI.delay(2)
 
 WebUI.setText(findTestObject('Object Repository/Page_Admin Portal Login/input_Password_Password'), 'Welcome1!')
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Page_Admin Portal Login/button_Login'))
 
