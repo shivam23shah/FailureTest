@@ -24,7 +24,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('Object Repository/Page_Admin Portal Login/input_User Name_UserName'), 'sshah')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Admin Portal Login/input_Password_Password'), 'AHzSUGJgRo0dvnkyA0znMQ==')
+WebUI.setText(findTestObject('Object Repository/Page_Admin Portal Login/input_Password_Password'), 'Welcome1!')
 
 WebUI.click(findTestObject('Object Repository/Page_Admin Portal Login/button_Login'))
 
