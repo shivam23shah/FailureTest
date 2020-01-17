@@ -20,9 +20,10 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
+- 
 - task: katalonTask@0
   inputs:
-    version: '7.2.1'
+    location: 'C:/Users/Sshah/Downloads/Katalon_Studio_Windows_64-7.2.1'
     executeArgs: '-retry=0 -testSuitePath="Test Suites/Testing RE1" -executionProfile="default" -browserType="Chrome" -apiKey="2027c416-5a95-4bde-89cf-21ee0075c5e1"'
 - task: VSBuild@1
   inputs:
