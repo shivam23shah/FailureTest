@@ -23,7 +23,7 @@ steps:
 - task: katalonTask@0
   inputs:
     version: '7.2.1'
-    executeArgs: '-retry=0 -testSuitePath="Test Suites/Testing RE1" -executionProfile="default" -browserType="Firefox" -apiKey="2027c416-5a95-4bde-89cf-21ee0075c5e1"'
+    executeArgs: '-retry=0 -testSuitePath="Test Suites/Testing RE1" -executionProfile="default" -browserType="Chrome" -apiKey="2027c416-5a95-4bde-89cf-21ee0075c5e1"'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
